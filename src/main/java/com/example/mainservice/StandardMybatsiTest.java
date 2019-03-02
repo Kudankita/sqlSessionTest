@@ -31,7 +31,10 @@ public class StandardMybatsiTest {
 
     AnotherTest at = new AnotherTest();
     List<WeatherDto> lw = at.anotherSelect(sqlSession);
-    System.out.println(lw);
+    log.info(lw.toString());
+
+
+
 
     sqlSession.commit();
   }
