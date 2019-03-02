@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 @Slf4j
 public class StandardMybatsiTest {
@@ -27,6 +28,11 @@ public class StandardMybatsiTest {
     weatherDto.setPrcp(0.3);
     weatherDto.setDate("1994-11-27");
     sqlSession.insert("insertData", weatherDto);
+
+    AnotherTest at = new AnotherTest();
+    List<WeatherDto> lw = at.anotherSelect(sqlSession);
+    System.out.println(lw);
+
     sqlSession.commit();
   }
 }

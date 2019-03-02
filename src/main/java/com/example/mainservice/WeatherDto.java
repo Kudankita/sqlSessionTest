@@ -9,4 +9,5 @@ public class WeatherDto {
   private int tempHi;
   private double prcp;
   private String date;
+  private int stud;
 }
