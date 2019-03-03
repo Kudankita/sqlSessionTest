@@ -17,5 +17,9 @@ public class SqlSessionTest {
     log.info(String.format("%08d", num));
     log.info(StringUtils.rightPad("AB345", 18, "0"));
     log.info(StringUtils.rightPad("US123456", 18, "0"));
+    String cd = System.getProperty("user.dir");
+    log.info("カレントディレクトリ："+cd);
+    JsonObject jsonObject = JacksonTest.jacksonTest("src\\main\\resources\\input.json");
+    log.info(jsonObject.toString());
   }
 }

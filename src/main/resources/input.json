@@ -1,0 +1,12 @@
+{
+  "value": 100,
+  "string": "hogehoge",
+  "mp": {
+    "key2": "value2",
+    "key1": "value1"
+  },
+  "list": [
+    "item1",
+    "item2"
+  ]
+}
